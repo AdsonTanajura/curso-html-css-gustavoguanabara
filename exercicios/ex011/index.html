@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/MyIcon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Mídias em HTMl5</title>
 </head>
 <body>
+    <h1>Imagem Dinamica</h1>
+    <p>
+        Tente abrir o site em varios dispositivos diferentes ou simplismente aumente  e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="assets/P.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="assets/M.png" type="image/png">  
+        <img src="assets/G.png" alt="Imagem Grande">
+    </picture>
+    
+    <h1>Reproducindo Áudio</h1>
+    <p>
+        Vamos aprender a reproduzir áudio em HTML5.
+    </p>
+    <audio preload="metadata" controls loop >
+        <source src="assets/sounds/puppy-love.mp3" type="audio/mpeg">
+        <source src="assets/sounds/puppy-love.ogg" type="audio/ogg">
+        <source src="assets/sounds/puppy-love.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="assets/sounds/puppy-love.mp3" target="_self" type="audio/mpeg">click aqui para baixar o arquivo mp3</a></p>
+    </audio>
+
+    <audio preload="metadata" controls loop>
+        <source src="assets/sounds/hot-lanta.mp3" type="audio/mpeg">
+        <source src="assets/sounds/hot-lanta.ogg" type="audio/ogg">
+        <source src="assets/sounds/hot-lanta.wav" type="audio/wav">
+        <p>
+            Infelizmente seu navegador não consegue reproduzir áudio.
+            <a href="assets/sounds/hot-lanta.mp3" target="_self" type="audio/mpeg">click aqrui para baixar o arquivo</a> 
+        </p>
+    </audio>
     
 </body>
 </html>
